@@ -1,7 +1,8 @@
 import './App.css'
 // import UseTransition from './UseTransiton'
 // import DerivedState from './DerivedState'
-import LiftingState from './LiftingState'
+// import LiftingState from './LiftingState'
+import UpdateObject from './UpdateObject'
 
 function App() {
 
@@ -9,7 +10,8 @@ function App() {
     <div> 
       {/* <UseTransition /> */}
       {/* <DerivedState /> */}
-      <LiftingState />
+      {/* <LiftingState /> */}
+      <UpdateObject />
     </div>
   )
 }
