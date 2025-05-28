@@ -3,7 +3,7 @@ import './App.css'
 // import DerivedState from './DerivedState'
 // import LiftingState from './LiftingState'
 // import UpdateObject from './UpdateObject'
-
+import UpdateArray from './UpdateArray'
 function App() {
 
   return (
@@ -12,7 +12,8 @@ function App() {
       {/* <DerivedState /> */}
       {/* <LiftingState /> */}
       {/* <UpdateObject /> */}
-      
+      <UpdateArray />
+
     </div>
   )
 }
