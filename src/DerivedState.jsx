@@ -1,4 +1,4 @@
-// jab hum aik variable state ke value ya state ke calculation ko rakhty hai, tu usko derived state kehty hai. eski waja sy application ke performance increase hoti hai.
+// jab aik variable state ke value ya state ke calculation ko rakhty hai, tu usko derived state kehty hai. eski waja sy application ke performance increase hoti hai.
 
 import { useState } from "react"
 
@@ -11,9 +11,10 @@ function DerivedState(){
     const handleAddUser = () =>{
         setUsers([...users, user])
     }
-
+    // yaha per variable state ke value ko save karta hai.
     const total = users.length;
     const last = users[users.length-1];
+    // users array sy duplicate values ko remove kiya javascript k built-in object Set sy. Aur phr (spread operator) ... sy us object ko array main convert kiya.
     const unique = [...new Set(users)].length;
 
   return(
