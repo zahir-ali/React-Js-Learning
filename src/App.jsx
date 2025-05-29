@@ -3,7 +3,9 @@ import './App.css'
 // import DerivedState from './DerivedState'
 // import LiftingState from './LiftingState'
 // import UpdateObject from './UpdateObject'
-import UpdateArray from './UpdateArray'
+// import UpdateArray from './UpdateArray'
+// import UseActionHook from './UseActionHook';
+
 function App() {
 
   return (
@@ -12,7 +14,8 @@ function App() {
       {/* <DerivedState /> */}
       {/* <LiftingState /> */}
       {/* <UpdateObject /> */}
-      <UpdateArray />
+      {/* <UpdateArray /> */}
+      {/* <UseActionHook /> */}
 
     </div>
   )
