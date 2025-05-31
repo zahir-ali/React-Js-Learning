@@ -1,5 +1,6 @@
+import { useState } from 'react'
 import './App.css'
-import {Fragment} from 'react'
+// import {Fragment} from 'react'
 // import UseTransition from './UseTransiton'
 // import DerivedState from './DerivedState'
 // import LiftingState from './LiftingState'
@@ -7,11 +8,14 @@ import {Fragment} from 'react'
 // import UpdateArray from './UpdateArray'
 // import UseActionHook from './UseActionHook';
 // import UseIdHook from './UseidHook';
-import FragmentFun from './FragmentFun'
-function App() {
+// import FragmentFun from './FragmentFun'
+import Collage from './Collage'
+import { SubjectContext } from './ContextData'
 
+function App() {
+    const [subject , setSubject] = useState(" ")
   return (
-    <Fragment> 
+    <div style={{backgroundColor:'yellow', padding:10}}> 
       {/* <UseTransition /> */}
       {/* <DerivedState /> */}
       {/* <LiftingState /> */}
@@ -19,8 +23,20 @@ function App() {
       {/* <UpdateArray /> */}
       {/* <UseActionHook /> */}
       {/* <UseIdHook /> */}
-      <FragmentFun />
-    </Fragment>
+      {/* <FragmentFun /> */}
+      <SubjectContext.Provider value={subject}>
+      <select value={subject} onChange={(e)=>setSubject(e.target.value)}>
+        <option value="">Select Subject</option>
+        <option value="Maths">Maths</option>
+        <option value="History">History</option>
+        <option value="English">English</option>
+      </select>
+      <h1>Context Api</h1>
+      <button onClick={()=>setSubject('')}>Clear</button>
+      <Collage />
+      </SubjectContext.Provider>
+      
+    </div>
   )
 }
 export default App
