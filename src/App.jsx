@@ -1,4 +1,4 @@
-import { useState } from 'react'
+// import { useState } from 'react'
 import './App.css'
 // import {Fragment} from 'react'
 // import UseTransition from './UseTransiton'
@@ -9,11 +9,13 @@ import './App.css'
 // import UseActionHook from './UseActionHook';
 // import UseIdHook from './UseidHook';
 // import FragmentFun from './FragmentFun'
-import Collage from './Collage'
-import { SubjectContext } from './ContextData'
+// import Collage from './Collage'
+// import { SubjectContext } from './ContextData'
+import CustomTwo from './CustomTwo'
 
 function App() {
-    const [subject , setSubject] = useState(" ")
+    // const [subject , setSubject] = useState(" ")
+
   return (
     <div style={{backgroundColor:'yellow', padding:10}}> 
       {/* <UseTransition /> */}
@@ -24,7 +26,9 @@ function App() {
       {/* <UseActionHook /> */}
       {/* <UseIdHook /> */}
       {/* <FragmentFun /> */}
-      <SubjectContext.Provider value={subject}>
+
+      {/* Context api code start */}
+      {/* <SubjectContext.Provider value={subject}>
       <select value={subject} onChange={(e)=>setSubject(e.target.value)}>
         <option value="">Select Subject</option>
         <option value="Maths">Maths</option>
@@ -34,8 +38,11 @@ function App() {
       <h1>Context Api</h1>
       <button onClick={()=>setSubject('')}>Clear</button>
       <Collage />
-      </SubjectContext.Provider>
+      </SubjectContext.Provider> */}
+      {/* Context api code End */}
       
+      <CustomTwo />
+
     </div>
   )
 }
