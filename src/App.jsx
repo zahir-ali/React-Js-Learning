@@ -11,7 +11,8 @@ import './App.css'
 // import FragmentFun from './FragmentFun'
 // import Collage from './Collage'
 // import { SubjectContext } from './ContextData'
-import CustomTwo from './CustomTwo'
+// import CustomTwo from './CustomTwo'
+import FetchData from './FetchData'
 
 function App() {
     // const [subject , setSubject] = useState(" ")
@@ -41,7 +42,8 @@ function App() {
       </SubjectContext.Provider> */}
       {/* Context api code End */}
       
-      <CustomTwo />
+      {/* <CustomTwo /> */}
+      <FetchData />
 
     </div>
   )
