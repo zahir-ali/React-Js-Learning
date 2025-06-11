@@ -47,7 +47,7 @@ function UseActionHook(){
                 {
                     data?.error && <span style={{color:"red"}}>{data?.error}</span>
                 }
-                {/* this is optional channing if the data.name is undefined or null , it will not crash the app  */}
+                {/* this is optional channing if the data.name is undefined or null, it will not crash the app*/}
                 <h3>Name: {data?.name}</h3>
                 <h3>password: {data?.password}</h3>
         </div>

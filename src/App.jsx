@@ -1,4 +1,5 @@
 // import { useState } from 'react'
+import { NavLink, Route, Routes } from 'react-router'
 import './App.css'
 // import {Fragment} from 'react'
 // import UseTransition from './UseTransiton'
@@ -12,7 +13,11 @@ import './App.css'
 // import Collage from './Collage'
 // import { SubjectContext } from './ContextData'
 // import CustomTwo from './CustomTwo'
-import FetchData from './FetchData'
+// import FetchData from './FetchData'
+// import ApiData from './ApiData'
+import UserList from './UserList'
+import UserAdd from './UserAdd'
+
 
 function App() {
     // const [subject , setSubject] = useState(" ")
@@ -43,7 +48,22 @@ function App() {
       {/* Context api code End */}
       
       {/* <CustomTwo /> */}
-      <FetchData />
+      {/* <FetchData /> */}
+            <h1>Make Routes and pages for add User and User list UI</h1>
+      {/* <ApiData /> */}
+      {/* <UserList /> */}
+      <ul>
+        <li>
+          <NavLink to='/'>Home</NavLink>
+        </li>
+        <li>
+          <NavLink to='/add'>Add User</NavLink>
+        </li>
+      </ul>
+      <Routes>
+        <Route path="/" element={<UserList/>}/>
+        <Route path="/add" element={<UserAdd/>}/>
+      </Routes>
 
     </div>
   )
