@@ -4,7 +4,7 @@ import './App.css'
 
 function UseTransition() {
   const [pending, startTransition] = useTransition();
-
+  
   const handleButton = ()=>{
   startTransition(async ()=> {
        await new Promise(res => setTimeout(res, 2000));

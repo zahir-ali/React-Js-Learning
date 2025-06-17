@@ -20,9 +20,7 @@ function UseActionHook(){
             return {error:'Failed to Submit, Enter proper data', name,password}
         }
     }
-    
     const [data,formAction,pending] = useActionState(saveData , {message: ''})
-
     console.log(data)
     return(
         <div>

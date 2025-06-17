@@ -1,7 +1,5 @@
 import { useState } from "react";
 
-
-
 function UserAdd(){
 
     const [name, setName]= useState('');

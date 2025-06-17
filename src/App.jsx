@@ -15,9 +15,12 @@ import './App.css'
 // import CustomTwo from './CustomTwo'
 // import FetchData from './FetchData'
 // import ApiData from './ApiData'
-import UserList from './UserList'
-import UserAdd from './UserAdd'
-
+// import UserList from './UserList'
+// import UserAdd from './UserAdd'
+// import UserEdit from './UserEdit'
+// import FormValidation from './FormValidation'
+// import LazyLoading from './LazyLoad'
+import UseReducer from './UseReducer'
 
 function App() {
     // const [subject , setSubject] = useState(" ")
@@ -49,22 +52,25 @@ function App() {
       
       {/* <CustomTwo /> */}
       {/* <FetchData /> */}
-            <h1>Make Routes and pages for add User and User list UI</h1>
+            {/* <h1>Make Routes and pages for add User and User list UI</h1> */}
       {/* <ApiData /> */}
       {/* <UserList /> */}
-      <ul>
+      {/* <ul>
         <li>
           <NavLink to='/'>Home</NavLink>
         </li>
         <li>
           <NavLink to='/add'>Add User</NavLink>
         </li>
-      </ul>
-      <Routes>
+      </ul> */}
+      {/* <Routes>
         <Route path="/" element={<UserList/>}/>
         <Route path="/add" element={<UserAdd/>}/>
-      </Routes>
-
+        <Route path="/edit/:id" element={<UserEdit/>}/>
+      </Routes> */}
+        {/* <FormValidation /> */}
+        {/* <LazyLoading /> */}
+        <UseReducer />
     </div>
   )
 }
